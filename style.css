@@ -1,0 +1,422 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+#greetingPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-image: linear-gradient(white, #8432de);
+}
+
+.greetingDiv {
+    width: 50rem;
+}
+
+.greetingDiv ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.greetingDiv h1 {
+    font-weight: 900;
+    font-size: 10rem;
+    color: white;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.greetingDiv p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#educationPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-image: linear-gradient(#8432de, #de328c);
+}
+
+.educationDiv {
+    width: 50rem;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.educationDiv h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+}
+
+.educationDiv p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+#projectsPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-image: linear-gradient(#de328c, #de3236);
+    color: white;
+}
+
+.projectsDiv {
+    width: 50rem;
+}
+
+.projectsDiv ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+.projectsDiv h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.projectsDiv img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.projectsDiv img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px RGBA(0,0,0,40%);
+}
+
+#contactPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    background-image: linear-gradient(#de3236, black);
+}
+
+.contactDiv {
+    width: 50rem;
+    text-align: center;
+}
+
+.contactDiv img{
+    height: 20rem;
+    width: 20rem;
+}
+
+.contactDiv h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+}
+
+.contactDiv ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.contactSubmission {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 15px;
+    justify-content: center;
+    margin: auto;
+}
+
+input[type=email]{
+    width: 30rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: gray;
+    font-size: 1rem;
+    border:0;
+}
+
+textarea{
+    width: 30rem;
+    height: 10rem;
+    text-align: left;
+    color: gray;
+    font-size: 1rem;
+    border: 0;
+    word-wrap: break-word;
+}
+
+label {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+input[type=submit] {
+    padding: 1.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: lightgray;
+    border-style: none;
+    display: block;
+    margin: auto;
+}
+
+input[type=submit]:hover{
+    background-color: gray;
+    color: white;
+}
+
+input[type=submit]:active{
+    background-color: dimgray;
+    color: white;
+}
+
+/* Styling for the mobile version */
+
+@media only screen and (max-width: 1200px){
+
+    *{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #greetingPage {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        background-image: linear-gradient(white, #8432de);
+    }
+    
+    .greetingDiv {
+        text-align: center;
+        width: 90%;
+    }
+
+    .greetingDiv ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .greetingDiv h1 {
+        font-weight: 900;
+        font-size: 10rem;
+        color: white;
+    }
+
+    .greetingDiv img {
+        width: 25rem;
+        height: 25rem;
+    }
+    
+    .greetingDiv p {
+        margin-top: 0;
+        margin-bottom: 10rem;
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    #educationPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        background-image: linear-gradient(#8432de, #de328c);
+    }
+    
+    .educationDiv {
+        width: 90%;
+    }
+    
+    .educationDiv h1 {
+        font-size: 5rem;
+        margin-bottom: 0;
+        color: white;
+        text-align: center;
+    }
+    
+    .educationDiv p {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    #projectsPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        background-image: linear-gradient(#de328c, #de3236);
+        color: white;
+    }
+    
+    .projectsDiv {
+        width: 60%;
+    }
+
+    .badges img{
+        height: 3rem;
+    }
+    
+    .projectsDiv {
+        margin-left: 2rem;
+    }
+
+    .projectsDiv ul {
+        display: inline;
+        list-style: none;
+        font-size: 2.5rem;
+        text-align: left;
+        text-decoration: overline;
+    }
+
+    .projectsDiv li {
+        margin-bottom: 2rem;
+    }
+    
+    .projectsDiv h1 {
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .projectsDiv img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 15px;
+        margin: auto;
+        margin-right: 2rem;
+    }
+
+    #contactPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        background-image: linear-gradient(#de3236, black);
+    }
+    
+    .contactDiv {
+        width: 90%;
+    }
+
+    .contactDiv label{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .contactDiv h1 {
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+    }
+
+    .contactDiv img {
+        height: 20rem;
+        width: 20rem;
+    }
+    
+    .contactDiv ul {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contactSubmission {
+        width: 100%;
+        display: flex;
+        background-color: white;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input[type=email] {
+        width: 90%;
+        margin-bottom: 1rem;
+        text-align: left;
+        color: gray;
+        font-size: 3rem;
+        border:0;
+    }
+
+    .contactDiv textarea {
+        height: 20rem;
+        width: 90%;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    input[type=submit] {
+        padding: 2rem;
+        border-radius: 15px;
+        font-size: 3rem;
+        font-weight: bold;
+        background-color: lightgray;
+        border-style: none;
+        display: block;
+        margin: auto;
+    }
+    
+    input[type=submit]:hover{
+        background-color: gray;
+        color: white;
+    }
+    
+    input[type=submit]:active{
+        background-color: dimgray;
+        color: white;
+    }
+
+}

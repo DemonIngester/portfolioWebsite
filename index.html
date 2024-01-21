@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Kolton's Portfolio</title>
+</head>
+<body>
+
+    <div class="container">
+
+    <section id="greetingPage" name="greetingPage">
+        <div class="greetingDiv">
+            <ul>
+                    <li><h1>Hello</h1></li>
+                    <li><img src="wavingSticker.png"></li>
+            </ul>
+            <p>
+            My name is Kolton. 
+            I'm a new developer looking to expand my 
+            skillset and portfolio. 
+            </p>
+        </div>
+    </section>
+
+    <section id="educationPage" name="educationPage">
+        <div class="educationDiv">
+            <h1>Education++</h1>
+            <p>
+                As a recent graduate with a Bachelor's Degree in Computer Science, 
+                I am excited to share insights into my educational journey. 
+                Throughout my studies, I actively immersed myself in practical projects, 
+                developing local programs, games, UI designs, and deploying websites. 
+                These experiences have laid a strong foundation, providing me with a practical 
+                understanding of key concepts in the field. I am eager to bring this enthusiasm 
+                and foundational knowledge to a dynamic work environment, contributing as 
+                I continue to learn and grow in the world of technology. I look forward to 
+                the opportunity to discuss how my skills align with the goals of your organization.
+            </p>
+        <div class="badges">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+        <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+        <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+        <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white">
+        </div>
+        </div>
+    </section>
+
+    <section id="projectsPage" name="projectsPage">
+        <div class="projectsDiv">
+            
+            <h1>Projects</h1>
+            
+            <ul>
+                <li onclick="textGameP()"><img src="textGame.jpg">Text Based Game</li>
+                <li onclick="uiDesignP()"><img src="uiUxDesign.jpg">UI/UX Design</li>
+                <li onclick="openglHouseP()"><img src="openglHouse.jpg">OpenGL</li>
+                <li onclick="planetExpressP()"><img src="planetExpress.jpg">Planet Express Site</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section id="contactPage" name="contactPage">
+        <div class="contactDiv">
+            <ul>
+                <li><img src="callSticker.png"></li>
+                <li><h1>Contact</h1></li>
+            </ul>
+
+            <div class="contactSubmission">
+                <form id="contactForm" action="https://formspree.io/f/xqkrezdd" method="POST">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" 
+                    placeholder="example@email.com"
+                    minlength="2" maxlength="50"
+                    required><br>
+
+                    <label for="message">Messages</label><br>
+                    <textarea name="message" 
+                    placeholder="Your message here."
+                    minlength="5" maxlength="250" 
+                    required></textarea><br>
+                    <input type="text" name="_gotcha" style="display:none;">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+</body>
+</html>
